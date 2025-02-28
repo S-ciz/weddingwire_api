@@ -1,0 +1,178 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "WeddingWire",
+    "collectionId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+    "dateExported": "2025-02-28T11:01:22.549Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8af9f5bf-4cb0-461b-80f0-d0650c34a7ad",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "getUsers",
+            "url": "http://localhost:7000/weddingwire/api/users/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-27T08:55:52.215Z",
+            "modified": "2025-02-27T10:17:09.556Z",
+            "headers": []
+        },
+        {
+            "_id": "6c75d684-0ac2-438e-ad7d-f893a800a304",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "getUser",
+            "url": "http://localhost:7000/weddingwire/api/users/2",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-02-27T08:58:49.328Z",
+            "modified": "2025-02-27T09:00:03.114Z",
+            "headers": []
+        },
+        {
+            "_id": "e8af6c87-a88c-4c83-978e-7b4abb8c91c8",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "postUser",
+            "url": "http://localhost:7000/weddingwire/api/users",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-02-27T09:03:15.751Z",
+            "modified": "2025-02-27T09:42:58.006Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Hermano Davinci\",\n  \"email\": \"davici@example.com\",\n  \"password\": \"1234\", \n  \"role\":0\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7e1df972-f6f7-402a-afaa-60eb1288faab",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "deleteUser",
+            "url": "http://localhost:7000/weddingwire/api/users/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-02-27T09:44:58.776Z",
+            "modified": "2025-02-27T09:45:35.823Z",
+            "headers": []
+        },
+        {
+            "_id": "9d4b7280-f330-4362-84f6-ab433a05c326",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "patchBio",
+            "url": "http://localhost:7000/weddingwire/api/users/bio",
+            "method": "PATCH",
+            "sortNum": 70000,
+            "created": "2025-02-27T10:17:25.585Z",
+            "modified": "2025-02-27T10:18:14.803Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"vendorId\": \"2\",\n  \"newBio\": \"Stan the man\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8d397814-0d1c-4535-b9b6-71f615144a66",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "post Service",
+            "url": "http://localhost:7000/weddingwire/api/users/services",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2025-02-27T10:23:53.384Z",
+            "modified": "2025-02-27T10:34:44.321Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"vendorId\": \"2\",\n  \"category\": \"Attire\",\n  \"description\": \"my new service\",\n  \"price_range\": [1000, 4000],\n  \"availability\": [\"Mon 12 - 14\",\"Fri\"],\n  \"locations\": [\"jhb\", \"pretoria\", \"soweto\"],\n  \"images\": [\"img1.png\", \"img2.png\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "fbcf6045-add6-4475-bf4b-28cc94859ca7",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "delete service",
+            "url": "http://localhost:7000/weddingwire/api/services",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2025-02-27T10:37:32.340Z",
+            "modified": "2025-02-27T10:45:50.993Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"vendorID\": \"2\", \n  \"category\": \"Venue\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "69172627-0f04-473a-b411-baabc420f08b",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "postImage",
+            "url": "http://localhost:7000/weddingwire/upload",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2025-02-28T08:54:55.880Z",
+            "modified": "2025-02-28T10:00:26.021Z",
+            "headers": []
+        },
+        {
+            "_id": "94c5b7eb-6382-4b39-b012-e4c1be320cee",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "post Review",
+            "url": "http://localhost:7000/weddingwire/api/review",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2025-02-28T10:19:48.551Z",
+            "modified": "2025-02-28T10:55:18.194Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"1\",\n  \"vendorId\": \"2\",\n  \"category\": \"Venue\",\n  \"comment\": \"What a friend we have in Jesus\",\n  \"rating\": 3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1f012657-8b9a-458d-a743-bb7472d75334",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "patch review",
+            "url": "http://localhost:7000/weddingwire/api/review",
+            "method": "PATCH",
+            "sortNum": 120000,
+            "created": "2025-02-28T10:33:44.262Z",
+            "modified": "2025-02-28T10:50:31.560Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"1\",\n  \"vendorId\": \"2\",\n  \"category\": \"Photography\",\n  \"comment\": \"Booooo\",\n  \"rating\": 0\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "b9e239b2-b7fb-4458-a0ce-0333e12c02d1",
+            "colId": "59138ed8-03ac-4262-a9aa-86c51a366663",
+            "containerId": "",
+            "name": "delete review",
+            "url": "http://localhost:7000/weddingwire/api/review",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2025-02-28T10:53:05.998Z",
+            "modified": "2025-02-28T10:53:40.188Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"1\",\n  \"vendorId\": \"2\",\n  \"category\": \"Photography\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "3Y8BNYQ2C2XebqD_LwfitrNFSYV0SvrU9zqsHJhwX_KmpzCPrj6kQ2Qq_M-jDSWxbpm5or1L8Y5euDzDYyRn4g"
+}
